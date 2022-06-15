@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz</title>
+    <style>
+        h3 {
+            text-align: center;
+            color: #272343;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        hr {
+            border-top: 3px dashed #BAE8E8;
+        }
+        canvas {
+            margin-left: 20%;
+            border: 2px double #FFD803;
+        }
+        table {
+            margin-left: 1100px;
+            position: absolute;
+            top: 20%;
+        }
+        table, tr, td {
+            border: 1px solid #272343;
+        }
+        td, tr {
+            width: 25px;
+            height: 25px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            padding-left: 25px;
+        }
+        div {
+            height: 100px;
+            position: relative;
+        }
+        input {
+            position: absolute;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Paint</h3>
+    <hr>
+    <div>
+        <input type="radio" name="rad" id="ch1" value="rectangle" onchange="chfilVal()">
+        <img src="/rectangle.png">
+        <input type="radio" name="rad" id="ch2" value="circle" onchange="chfilVal()">
+        <img src="/circle.png">
+        <input type="radio" name="rad" id="ch3" value="rhombus" onchange="chfilVal()">
+        <img src="/rhombus.png">
+        <input type="radio" name="rad" id="ch4" value="triangle" onchange="chfilVal()">
+        <img src="/triangle.png">
+        <table>
+            <tbody>
+                <tr>
+                    <td data-color="black" style="background-color:black;"></td>
+                    <td data-color="grey" style="background-color:grey;"></td>
+                    <td data-color="maroon" style="background-color:maroon;"></td>
+                    <td data-color="red" style="background-color: red;"></td>
+                    <td data-color="yellow" style="background-color:yellow;"></td>
+                    <td data-color="MediumSeaGreen" style="background-color:MediumSeaGreen;"></td>
+                    <td data-color="DeepSkyBlue" style="background-color:DeepSkyBlue;"></td>
+                    <td data-color="blue" style="background-color:blue;"></td>
+                    <td data-color="blueviolet" style="background-color:blueviolet;"></td>
+                </tr>
+                <tr>
+                    <td data-color="white" style="background-color:white;"></td>
+                    <td data-color="lightgray" style="background-color:lightgray;"></td>
+                    <td data-color="SaddleBrown" style="background-color: SaddleBrown;"></td>
+                    <td data-color="LightPink" style="background-color:LightPink;"></td>
+                    <td data-color="Khaki" style="background-color:Khaki;"></td>
+                    <td data-color="YellowGreen" style="background-color:YellowGreen;"></td>
+                    <td data-color="Aquamarine" style="background-color:Aquamarine;"></td>
+                    <td data-color="CadetBlue" style="background-color:CadetBlue;"></td>
+                    <td data-color="DarkGrey" style="background-color:DarkGrey;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr><br>
+    <canvas id="cnv" width="1000px" height="600px"></canvas>
+    <script src="task1.js"></script>
+</body>
+</html>
